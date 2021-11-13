@@ -33,4 +33,13 @@ game/
     /Colors/
     /sys images/
     (various clock_anim pngs)
+ /gui/
+    /bar/
+    /button/
+    /overlay/
+    /phone/
+    /rotate/
+    /scrollbar/
+    /slider/
+    (and then just a bunch of random images)
    
