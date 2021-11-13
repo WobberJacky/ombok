@@ -523,8 +523,8 @@ style meow_button:
     hover_sound "audio/system_sounds/hover_button.wav"
     activate_sound "audio/system_sounds/activate_button.wav"
 style setting_button:
-    background "setting_idle_background"
-    hover_background "setting_hover_background"
+    background "gui/setting_idle_background.png"
+    hover_background "gui/setting_hover_background.png"
     text_align .5
     hover_sound "audio/system_sounds/hover_button.wav"
     activate_sound "audio/system_sounds/activate_button.wav"
