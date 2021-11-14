@@ -496,3 +496,8 @@ init python:
         dick = (time_new.tm_min)
         cock = (time_new.tm_sec)
     cockdefine()
+
+init python:
+    def fruck():
+        global frick
+        frick = renpy.get_say_attributes()
