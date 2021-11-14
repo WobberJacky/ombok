@@ -607,14 +607,16 @@ style choice_button_text is default:
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
-
 screen quick_menu():
 
     ## Ensure this appears on top of other screens.
     zorder 100
 
     if quick_menu:
-
+        hbox:
+            xalign .9999
+            textbutton _("English") action Language("english") style "navigation_button"
+            textbutton _("Japanese") action Language(None) style "navigation_button"
         hbox:
             style_prefix "quick"
 
@@ -1048,6 +1050,8 @@ style return_button:
 ## example of how to make a custom screen.
 
 screen about():
+    if main_menu:
+        key "game_menu" action ShowMenu("main_menu")
     tag menu
     add "gui/option_bg.png"
     ## This use statement includes the game_menu screen inside this one. The
@@ -1107,14 +1111,18 @@ style about_label_text:
 ## www.renpy.org/doc/html/screen_special.html#load
 
 screen save():
-
+    if main_menu:
+        key "game_menu" action ShowMenu("main_menu")
+    key "mouseup_3" action Hide("options")
     tag menu
 
     use file_slots(_("Save"))
 
 
 screen load():
-
+    if main_menu:
+        key "game_menu" action ShowMenu("main_menu")
+    key "mouseup_3" action Hide("options")
     tag menu
 
     use file_slots(_("Load"))
