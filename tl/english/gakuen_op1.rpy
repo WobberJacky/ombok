@@ -865,7 +865,7 @@ translate english gakuen_op_1_d6c78129:
     # voice pet_r0011
     # Peter "{size=+20}「！！！！」{/size} "
     voice pet_r0011
-    Peter "{size=+20}"!!!!!!"{/size} "
+    Peter "{size=+20}!!!!!!{/size} "
 
 # game/gakuen_op1.rpy:1009
 translate english gakuen_op_1_31f1f533:
