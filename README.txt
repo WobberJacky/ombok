@@ -6,6 +6,9 @@ game/
   (various font files)
   (various RPYs)
   (the movie files)
+  /tl/
+    /None/
+    /english/
   /audio/
     /bgm/
     /new_game/
